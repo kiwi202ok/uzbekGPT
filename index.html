@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>uzbekGPT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>uzbekGPT</h1>
+    <div class="controls">
+      <select id="languageSelector" title="Tilni tanlang">
+        <option value="uz">O'zbekcha</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+      </select>
+
+      <label class="switch" title="Dark Mode">
+        <input type="checkbox" id="darkModeToggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <div id="chatContainer">
+      <div id="chatBox"></div>
+      <form id="chatForm">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Xabar yozing..."
+          autocomplete="off"
+          autofocus
+        />
+        <div class="chat"></div>
+
+        <button type="submit" title="Yuborish">➤</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
